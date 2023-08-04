@@ -1,0 +1,7 @@
+numpy
+pickle
+scikit-learn
+torch
+Pillow
+facenet-pytorch
+deepface
