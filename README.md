@@ -1,25 +1,24 @@
-# face_clustering
-Face clustering baseline
+# Face Clustering
 
-https://disk.yandex.ru/d/X7Dh7hrgF90k4g
+## Description
+This project aims to perform face clustering based on the given dataset of reference clusters. Each cluster contains several photographs of the same individual.
 
-Дано:
-- эталонные кластеры
-- внутри каждого кластера несколько фотографий с одним и тем-же человеком
+## Dataset
+The dataset can be downloaded from the following link:
+[Face Clustering Dataset](https://disk.yandex.ru/d/X7Dh7hrgF90k4g)
 
-Задачи:
-- кластеризовать людей
-- оценить качество кластеризации (метрики оценки качества должны удовлетворять свойствам: однородность, полнота)
+## Tasks
+1. Cluster individuals based on their faces.
+2. Evaluate the quality of clustering using metrics that satisfy the properties of homogeneity and completeness.
 
-Требования:
-- использовать объектно ориентированный подход
-- применить принципы: инкапсуляция, инверсия зависимостей
-- использовать патерн "сервисный слой"
+## Requirements
+- Use an object-oriented approach for implementation.
+- Apply the principles of encapsulation and dependency inversion.
+- Implement a service layer pattern.
 
-Решение.
-
-- сделан бейзлайн
-- для детекции лиц использован facenet_pytorch
-- для кластеризации размерность 
-INFO:__main__:Silhouette Score: 0.31514140487799364
-INFO:__main__:# unique faces: 25
+## Solution
+- A baseline solution has been implemented.
+- The `facenet_pytorch` library is used for face detection.
+- `DBSCAN` is utilized for clustering, with dimensionality reduction using `PCA`.
+- Silhouette Score: 0.31514140487799364
+- Number of unique faces: 25
