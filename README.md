@@ -22,3 +22,17 @@ The dataset can be downloaded from the following link:
 - `DBSCAN` is utilized for clustering, with dimensionality reduction using `PCA`.
 - Silhouette Score: 0.31514140487799364
 - Number of unique faces: 25
+
+## How to Run
+1. Download the face clustering dataset from the provided link.
+2. Execute
+
+```bash
+python3 baseline,py
+```
+
+FaceClusterConfig holds all paths.
+
+### Command-line Arguments
+- `-i` or `--dataset`: Path to the input directory of faces + images.
+- `-e` or `--encodings`: Path to the serialized database of facial encodings.
